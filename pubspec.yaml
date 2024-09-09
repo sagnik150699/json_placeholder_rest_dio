@@ -1,0 +1,33 @@
+name: json_placeholder_rest_dio
+description: "This app, created by Sagnik Bhattacharya (LinkedIn www.linkedin.com/in/sagnik-bhattacharya-916b9463/), demonstrates how a Flutter app communicates with a backend server using REST API principles."
+publish_to: 'none' # Remove this line if you wish to publish to pub.dev
+version: 1.0.0+1
+
+environment:
+  sdk: ^3.5.2
+dependencies:
+  flutter:
+    sdk: flutter
+
+
+  # The following adds the Cupertino Icons font to your application.
+  # Use with the CupertinoIcons class for iOS style icons.
+  cupertino_icons: ^1.0.8
+  dio: ^5.7.0
+
+dev_dependencies:
+  flutter_test:
+    sdk: flutter
+
+
+  flutter_lints: ^4.0.0
+
+
+flutter:
+
+
+  uses-material-design: true
+
+  # To add assets to your application, add an assets section, like this:
+  # assets:
+  #   - assets/
