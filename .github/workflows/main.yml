@@ -132,7 +132,7 @@ jobs:
 
 
   build_ios:
-    name: Build iOS
+    name: Build iOS ,
     runs-on: macos-latest
     steps:
       - uses: actions/checkout@v2
