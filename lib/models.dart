@@ -31,3 +31,42 @@ class Post {
     };
   }
 }
+
+class Comment {
+  final int postId;
+  final int id;
+  final String name;
+  final String email;
+  final String body;
+
+  // Constructor to initialize all fields
+  Comment({
+    required this.postId,
+    required this.id,
+    required this.name,
+    required this.email,
+    required this.body,
+  });
+
+  // Factory constructor to create a Comment object from JSON
+  factory Comment.fromJson(Map<String, dynamic> json) {
+    return Comment(
+      postId: json['postId'],
+      id: json['id'],
+      name: json['name'],
+      email: json['email'],
+      body: json['body'],
+    );
+  }
+
+  // Method to convert a Comment object into JSON
+  Map<String, dynamic> toJson() {
+    return {
+      'postId': postId,
+      'id': id,
+      'name': name,
+      'email': email,
+      'body': body,
+    };
+  }
+}
