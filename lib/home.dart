@@ -21,7 +21,7 @@ class _MyHomePageState extends State<MyHomePage> {
         children: [
           ButtonNav(page: GetPosts(), text: "Get posts"),
           ButtonNav(page: GetComments(), text: "Get comments"),
-          ButtonNav(page: GetImages(), text: "Get images")
+          ButtonNav(page: GetImage(), text: "Get images")
         ],
       ),
     );

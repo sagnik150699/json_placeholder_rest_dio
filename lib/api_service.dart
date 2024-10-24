@@ -34,4 +34,21 @@ class ApiService {
       throw Exception('Failed to load posts');
     }
   }
+
+  Future<List<Photo>> fetchPhotos() async {
+    try {
+      final response = await _dio
+          .get('https://jsonplaceholder.typicode.com/albums/1/photos');
+      logger.d(response);
+      if (response.statusCode == 200) {
+        List<dynamic> jsonResponse = response.data;
+        logger.d(jsonResponse);
+        return jsonResponse.map((photo) => Photo.fromJson(photo)).toList();
+      } else {
+        throw Exception('Failed to load photos');
+      }
+    } catch (e) {
+      throw Exception('Failed to load photos: ${e.toString()}');
+    }
+  }
 }
