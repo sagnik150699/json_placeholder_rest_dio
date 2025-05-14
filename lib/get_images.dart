@@ -35,7 +35,19 @@ class _GetImageState extends State<GetImage> {
               itemCount: photos.length,
               itemBuilder: (context, index) {
                 return ListTile(
-                  leading: Image.network(photos[index].thumbnailUrl),
+                  leading:
+                      // Image(image: NetworkImage(photos[index].thumbnailUrl)),
+                      Image.network(
+                    photos[index].thumbnailUrl,
+                    errorBuilder: (BuildContext context, Object error,
+                        StackTrace? stackTrace) {
+                      logger.d("Image Error: $error");
+                      return Image.network(
+                        'https://dummyimage.com/150x150/cccccc/000000.png&text=No+Image',
+                        fit: BoxFit.cover,
+                      );
+                    },
+                  ),
                   title: openSans(text: photos[index].title),
                 );
               },

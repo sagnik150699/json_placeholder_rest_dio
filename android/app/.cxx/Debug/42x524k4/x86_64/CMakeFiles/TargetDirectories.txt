@@ -1,0 +1,2 @@
+C:/Users/sagni/Documents/Workspace/json_placeholder_rest_dio/android/app/.cxx/Debug/42x524k4/x86_64/CMakeFiles/edit_cache.dir
+C:/Users/sagni/Documents/Workspace/json_placeholder_rest_dio/android/app/.cxx/Debug/42x524k4/x86_64/CMakeFiles/rebuild_cache.dir
