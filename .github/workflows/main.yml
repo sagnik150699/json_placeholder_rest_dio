@@ -78,7 +78,7 @@ jobs:
         with:
           name: build-windows
           if-no-files-found: error
-          path: build/windows/runner/Release/*/*.exe
+          path: build/windows/runner/Release/**
 
   build_ios_xcode16:
     name: Build iOS (Xcode 16)
