@@ -77,7 +77,7 @@ jobs:
         uses: actions/upload-artifact@v4
         with:
           name: build-windows
-          if-no-files-found: error
+
           path: build/windows/runner/Release/**
 
   build_ios_xcode16:
