@@ -1,3 +1,8 @@
+<p align="center">
+  <img src="https://raw.githubusercontent.com/sagnik150699/Sagnik-Bhattacharya/master/public/sagnik-bhattacharya.png" alt="Sagnik Bhattacharya" width="180">
+</p>
+Website: [sagnikbhattacharya.com](https://sagnikbhattacharya.com)
+
 # json_placeholder_rest_dio
 
 ### Author: Sagnik Bhattacharya
